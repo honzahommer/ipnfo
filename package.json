@@ -1,0 +1,22 @@
+{
+  "name": "ipnfo",
+  "description": "IP geolocation web server.",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "bin/postinstall",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/honzahommer/ipnfo.git"
+  },
+  "author": "Honza Hommer <honza@hommer.cz>",
+  "homepage": "https://github.com/honzahommer/ipnfo#README",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "dns": "^0.2.2",
+    "express": "^4.14.0",
+    "maxmind": "^2.1.0",
+    "request-ip": "^1.2.3"
+  }
+}
