@@ -3,24 +3,33 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-## Install
+## Running
+
+### npm
 
 ```bash
 git clone https://github.com/honzahommer/ipnfo.git && \
 cd ipnfo && \
-npm install
+npm install && \
+npm start
 ```
 
-## Running
+### Docker
 
 ```bash
-npm start
+docker run --net=host --restart=always -d honzahommer/ipnfo
+```
+
+#### Test
+
+```bash
+curl localhost:3000/8.8.8.8
 ```
 
 ## Endpoints
 
 ```bash
-curl ipnfo.herokuapp.com
-curl ipnfo.herokuapp.com/8.8.8.8
-curl ipnfo.herokuapp.com/hostname
+curl localhost:3000
+curl localhost:3000/8.8.8.8
+curl localhost:3000/8.8.8.8/hostname
 ```
