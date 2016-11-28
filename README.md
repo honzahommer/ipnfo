@@ -1,7 +1,7 @@
 # ipnfo
 > IP geolocation web server.
 
-[![build status](https://heroku-badge.herokuapp.com/?app=ipnfo)](https://dashboard.heroku.com/apps/ipnfo/activity)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Install
 
