@@ -2,6 +2,6 @@
   "name": "ipnfo",
   "description": "IP geolocation web server.",
   "repository": "https://github.com/honzahommer/ipnfo",
-  "logo": "https://raw.githubusercontent.com/honzahommer/ipnfo/master/logo.svg",
+  "logo": "https://raw.githubusercontent.com/honzahommer/ipnfo/master/src/logo.png",
   "keywords": ["node", "geo", "ip", "server", "location"]
 }
