@@ -14,7 +14,7 @@
   "author": "Honza Hommer <honza@hommer.cz>",
   "homepage": "https://github.com/honzahommer/ipnfo#README",
   "engines": {
-    "node": ">= 7.2.0"
+    "node": ">= 4.6.2"
   },
   "dependencies": {
     "cors": "^2.8.1",
