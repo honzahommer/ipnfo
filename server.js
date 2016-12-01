@@ -97,3 +97,5 @@ app.get('/:ip?/:key?', function(req, res) {
 var listener = app.listen(process.env.PORT || 3000, function() {
   console.log(pkg.name + ' listening on port ' + listener.address().port);
 });
+
+module.exports = app;

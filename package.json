@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "postinstall": "bin/postinstall",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
@@ -12,11 +13,19 @@
   },
   "author": "Honza Hommer <honza@hommer.cz>",
   "homepage": "https://github.com/honzahommer/ipnfo#README",
+  "engines": {
+    "node": ">= 7.2.0"
+  },
   "dependencies": {
     "cors": "^2.8.1",
     "dns": "^0.2.2",
     "express": "^4.14.0",
     "maxmind": "^2.1.0",
     "request-ip": "^1.2.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0"
   }
 }
