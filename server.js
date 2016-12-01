@@ -9,7 +9,6 @@ var fs = require('fs');
 var ip = require('request-ip');
 var path = require('path');
 var maxmind = require('maxmind');
-var whois = require('whois');
 
 var pkg = require('./package.json');
 
@@ -73,30 +72,25 @@ app.get('/:ip?/:key?', function(req, res) {
   var key = p.key;
 
   dns.reverse(ip, function(err, hostname) {
-    whois.lookup(ip, function(err, data) {
-      var lookup = cities.get(ip);
-      var result = {
-        ip: ip,
-        hostname: getter(hostname, '0'),
-        org: data.split('\n').reverse().find(function (element) {
-          return element.indexOf('OrgName:') === 0;
-        }).replace(/.*OrgName:\s+(.*)/, '$1'),
-        city: getter(lookup, 'city.names.en'),
-        postal_code: getter(lookup, 'postal.code'),
-        metro_code: getter(lookup, 'location.metro_code'),
-        subdivision: getter(lookup, 'subdivisions.0.names.en'),
-        subdivision_code: getter(lookup, 'subdivisions.0.iso_code'),
-        country: getter(lookup, 'country.names.en'),
-        country_code: getter(lookup, 'registered_country.iso_code'),
-        continent: getter(lookup, 'continent.names.en'),
-        latitude: getter(lookup, 'location.latitude'),
-        longitude: getter(lookup, 'location.longitude'),
-        accuracy: getter(lookup, 'location.accuracy_radius'),
-        time_zone: getter(lookup, 'location.time_zone')
-      };
+    var lookup = cities.get(ip);
+    var result = {
+      ip: ip,
+      hostname: getter(hostname, '0'),
+      city: getter(lookup, 'city.names.en'),
+      postal_code: getter(lookup, 'postal.code'),
+      metro_code: getter(lookup, 'location.metro_code'),
+      subdivision: getter(lookup, 'subdivisions.0.names.en'),
+      subdivision_code: getter(lookup, 'subdivisions.0.iso_code'),
+      country: getter(lookup, 'country.names.en'),
+      country_code: getter(lookup, 'registered_country.iso_code'),
+      continent: getter(lookup, 'continent.names.en'),
+      latitude: getter(lookup, 'location.latitude'),
+      longitude: getter(lookup, 'location.longitude'),
+      accuracy: getter(lookup, 'location.accuracy_radius'),
+      time_zone: getter(lookup, 'location.time_zone')
+    };
 
-      res.status(200).send(key ? getter(result, key) : result);
-    });
+    res.status(200).send(key ? getter(result, key) : result);
   });
 });
 

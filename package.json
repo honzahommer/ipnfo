@@ -22,8 +22,7 @@
     "dns": "^0.2.2",
     "express": "^4.14.0",
     "maxmind": "^2.1.0",
-    "request-ip": "^1.2.3",
-    "whois": "^2.3.6"
+    "request-ip": "^1.2.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
