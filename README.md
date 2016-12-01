@@ -29,7 +29,7 @@ pm2 startOrRestart ecosystem.config.js
 ### Docker
 
 ```bash
-docker run  -d --net=host --restart=always --name=ipnfo honzahommer/ipnfo
+docker run -d -p 3000:3000 --restart=always --name=ipnfo honzahommer/ipnfo
 ```
 
 ### Heroku
