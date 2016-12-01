@@ -4,7 +4,7 @@
 [![Release](https://img.shields.io/github/release/honzahommer/ipnfo.svg)](https://github.com/honzahommer/ipnfo/releases/latest) &nbsp;
 [![npm version](https://img.shields.io/npm/v/ipnfo.svg)](https://www.npmjs.com/package/ipnfo)  &nbsp; [![Build Status](https://img.shields.io/travis/honzahommer/ipnfo/master.svg)](https://travis-ci.org/honzahommer/ipnfo) &nbsp; [![devDependency Status](https://img.shields.io/david/dev/honzahommer/ipnfo.svg)](https://david-dm.org/honzahommer/ipnfo?type=dev) &nbsp; [![Meteor Atmosphere](https://img.shields.io/badge/meteor-honzahommer%3Aipnfo-blue.svg)](https://atmospherejs.com/honzahommer/ipnfo)
 
-## Instal & Running
+## Install & Running
 
 ### Linux host (postinstall not works on Windows)
 
