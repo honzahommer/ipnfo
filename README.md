@@ -1,11 +1,14 @@
 # ipnfo
 > IP geolocation web server.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![npm version](https://img.shields.io/npm/v/ipnfo.svg)](https://www.npmjs.com/package/ipnfo)
+[![Build Status](https://img.shields.io/travis/honzahommer/ipnfo/master.svg)](https://travis-ci.org/honzahommer/ipnfo)
+[![devDependency Status](https://img.shields.io/david/dev/honzahommer/ipnfo.svg)](https://david-dm.org/honzahommer/ipnfo?type=dev)
+[![Meteor Atmosphere](https://img.shields.io/badge/meteor-honzahommer%3Aipnfo-blue.svg)](https://atmospherejs.com/honzahommer/ipnfo)
 
-## Running
+## Instal & Running
 
-### npm
+### Linux host (postinstall not works on Windows)
 
 ```bash
 git clone https://github.com/honzahommer/ipnfo.git && \
@@ -14,16 +17,29 @@ npm install && \
 npm start
 ```
 
+### PM2 (Node.js process manager)
+
+```bash
+git clone https://github.com/honzahommer/ipnfo.git && \
+cd ipnfo && \
+npm install && \
+pm2 startOrRestart ecosystem.config.js
+```
+
 ### Docker
 
 ```bash
-docker run --net=host --restart=always -d honzahommer/ipnfo
+docker run  -d --net=host --restart=always --name=ipnfo honzahommer/ipnfo
 ```
 
-#### Test
+### Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+## Tests
 
 ```bash
-curl localhost:3000/8.8.8.8
+npm test
 ```
 
 ## Endpoints

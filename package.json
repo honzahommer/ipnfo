@@ -1,6 +1,7 @@
 {
   "name": "ipnfo",
   "description": "IP geolocation web server.",
+  "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "postinstall": "bin/postinstall",
