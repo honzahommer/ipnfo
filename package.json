@@ -21,6 +21,7 @@
     "cors": "^2.8.1",
     "dns": "^0.2.2",
     "express": "^4.14.0",
+    "json-format": "^1.0.1",
     "maxmind": "^2.1.0",
     "request-ip": "^1.2.3"
   },

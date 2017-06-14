@@ -6,7 +6,8 @@ var cors = require('cors');
 var dns = require('dns');
 var express = require('express');
 var fs = require('fs');
-var ip = require('request-ip');
+var requestIp = require('request-ip');
+var jsonFormat = require('json-format');
 var path = require('path');
 var maxmind = require('maxmind');
 
@@ -58,7 +59,7 @@ app.disable('x-powered-by');
 // Middlewares
 app.use(cors());
 app.use(router);
-app.use(ip.mw());
+app.use(requestIp.mw());
 
 // Handle favicon requests
 app.get('/favicon.ico', function(req, res) {
@@ -90,7 +91,7 @@ app.get('/:ip?/:key?', function(req, res) {
       time_zone: getter(lookup, 'location.time_zone')
     };
 
-    res.status(200).send(key ? getter(result, key) : result);
+    res.status(200).send(key ? getter(result, key) : jsonFormat(result, { type: 'space', size: 2 }));
   });
 });
 
