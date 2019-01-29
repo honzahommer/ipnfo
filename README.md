@@ -34,7 +34,7 @@ docker run -d -p 3000:3000 --restart=always --name=ipnfo honzahommer/ipnfo
 
 ### Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![Greenkeeper badge](https://badges.greenkeeper.io/honzahommer/ipnfo.svg)](https://greenkeeper.io/)
 
 ## Tests
 
