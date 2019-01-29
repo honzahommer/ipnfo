@@ -2,11 +2,22 @@
   "name": "ipnfo",
   "description": "IP geolocation web server.",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "scripts": {
-    "postinstall": "bin/postinstall",
-    "start": "node server.js",
-    "test": "mocha --timeout 10000"
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "publish": "git push origin --tags && npm run changelog && git push origin",
+    "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
+    "lint": "semistandard \"lib/**/*.js\" --fix",
+    "mocha": "mocha ./test/*.test.js",
+    "test": "npm run lint && nyc npm run mocha",
+    "postinstall": "lib/update.js",
+    "start": "lib/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,19 +26,35 @@
   "author": "Honza Hommer <honza@hommer.cz>",
   "homepage": "https://github.com/honzahommer/ipnfo#README",
   "engines": {
-    "node": ">= 4.6.2"
+    "node": ">= 8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
+  "semistandard": {
+    "env": [
+      "mocha"
+    ]
   },
   "dependencies": {
-    "cors": "^2.8.1",
-    "dns": "^0.2.2",
-    "express": "^4.14.0",
-    "json-format": "^1.0.1",
-    "maxmind": "^2.1.0",
-    "request-ip": "^1.2.3"
+    "express": "^4.16.4",
+    "flat": "^4.1.0",
+    "helmet": "^3.15.0",
+    "http-errors": "^1.7.1",
+    "maxmind": "^2.11.2",
+    "request": "^2.88.0",
+    "request-favicon": "^2.0.0",
+    "request-robots": "^2.0.0",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
-    "mocha": "^3.2.0"
+    "chai-http": "^4.2.1",
+    "husky": "^1.3.1",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "semistandard": "^13.0.1"
   }
 }

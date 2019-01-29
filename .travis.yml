@@ -1,5 +1,23 @@
 language: node_js
+
 node_js:
-   - "4.6.2"
-   - "6.9.1"
-   - "7.2"
+  - "8"
+  - "10"
+
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - "npm test"
+
+branches:
+  only:
+    - master
+    - /^greenkeeper/.*$/
+
+notifications:
+  email:
+    - honza@hommer.cz

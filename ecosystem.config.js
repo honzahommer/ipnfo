@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
-    name: 'server',
-    script: 'server.js',
+    name: 'ipnfo',
+    script: 'lib/server.js',
     post_update: ['npm install'],
     watch: true,
     ignore_watch: ['node_modules', 'logs', '.git'],
@@ -11,10 +11,10 @@ module.exports = {
     max_memory_restart: '200M',
     env: {
       PORT: 3000,
-      NODE_ENV: "development",
+      NODE_ENV: 'development',
     },
     env_production: {
-      NODE_ENV: "production"
+      NODE_ENV: 'production'
     }
   }]
 }
