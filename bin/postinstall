@@ -1,3 +1,0 @@
-#!/bin/bash
-
-wget -qO- http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz | gunzip > db/geolite2-city.mmdb
