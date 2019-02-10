@@ -3,6 +3,7 @@
 [![npm version][npm-image]][npm-url]
 [![npm download][downloads-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/honzahommer/ipnfo.svg)](https://greenkeeper.io/)
 
 > IP geolocation web server.
 
@@ -34,7 +35,7 @@ docker run -d -p 3000:3000 --restart=always --name=ipnfo honzahommer/ipnfo
 
 ### Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![Greenkeeper badge](https://badges.greenkeeper.io/honzahommer/ipnfo.svg)](https://greenkeeper.io/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Tests
 
