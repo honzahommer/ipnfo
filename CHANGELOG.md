@@ -1,5 +1,19 @@
 # Change Log
 
+## [v2.0.1](https://github.com/honzahommer/ipnfo/tree/v2.0.1) (2019-02-24)
+[Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.0...v2.0.1)
+
+**Closed issues:**
+
+- An in-range update of http-errors is breaking the build 🚨 [\#4](https://github.com/honzahommer/ipnfo/issues/4)
+
+**Merged pull requests:**
+
+- fix: pin mocha to 6.0.0 [\#8](https://github.com/honzahommer/ipnfo/pull/8) ([honzahommer](https://github.com/honzahommer))
+- Greenkeeper/http errors 1.7.2 [\#6](https://github.com/honzahommer/ipnfo/pull/6) ([honzahommer](https://github.com/honzahommer))
+- Update mocha to the latest version 🚀 [\#5](https://github.com/honzahommer/ipnfo/pull/5) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update dependencies to enable Greenkeeper 🌴 [\#3](https://github.com/honzahommer/ipnfo/pull/3) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v2.0.0](https://github.com/honzahommer/ipnfo/tree/v2.0.0) (2019-01-29)
 [Full Changelog](https://github.com/honzahommer/ipnfo/compare/v1.0.0...v2.0.0)
 
