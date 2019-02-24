@@ -1,5 +1,8 @@
 # Change Log
 
+## [v2.0.2](https://github.com/honzahommer/ipnfo/tree/v2.0.2) (2019-02-24)
+[Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.1...v2.0.2)
+
 ## [v2.0.1](https://github.com/honzahommer/ipnfo/tree/v2.0.1) (2019-02-24)
 [Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.0...v2.0.1)
 
