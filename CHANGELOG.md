@@ -1,5 +1,17 @@
 # Change Log
 
+## [v2.0.3](https://github.com/honzahommer/ipnfo/tree/v2.0.3) (2019-05-19)
+[Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.2...v2.0.3)
+
+**Merged pull requests:**
+
+- Update maxmind to the latest version 🚀 [\#14](https://github.com/honzahommer/ipnfo/pull/14) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update husky to the latest version 🚀 [\#13](https://github.com/honzahommer/ipnfo/pull/13) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update nyc to the latest version 🚀 [\#12](https://github.com/honzahommer/ipnfo/pull/12) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update mocha to the latest version 🚀 [\#11](https://github.com/honzahommer/ipnfo/pull/11) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update supertest to the latest version 🚀 [\#10](https://github.com/honzahommer/ipnfo/pull/10) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update mocha to the latest version 🚀 [\#9](https://github.com/honzahommer/ipnfo/pull/9) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v2.0.2](https://github.com/honzahommer/ipnfo/tree/v2.0.2) (2019-02-24)
 [Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.1...v2.0.2)
 
