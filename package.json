@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "husky": "^2.0.0",
+    "husky": "^3.0.0",
     "mocha": "^6.1.4",
     "nyc": "^14.0.0",
     "semistandard": "^13.0.1",
