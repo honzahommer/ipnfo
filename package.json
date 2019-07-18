@@ -16,7 +16,6 @@
     "lint": "semistandard \"lib/**/*.js\" --fix",
     "mocha": "mocha ./test/*.test.js",
     "test": "npm run lint && nyc npm run mocha",
-    "postinstall": "lib/update.js",
     "start": "lib/server.js"
   },
   "repository": {
@@ -42,13 +41,12 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "flat": "^4.1.0",
+    "geolite2": "^1.2.1",
     "helmet": "^3.19.0",
     "http-errors": "^1.7.3",
-    "maxmind": "2.12.0",
-    "request": "^2.88.0",
+    "maxmind": "^3.1.2",
     "request-favicon": "^2.0.2",
-    "request-robots": "^2.0.1",
-    "zlib": "^1.0.5"
+    "request-robots": "^2.0.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
