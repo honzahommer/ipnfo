@@ -1,5 +1,27 @@
 # Change Log
 
+## [Unreleased](https://github.com/honzahommer/ipnfo/tree/HEAD)
+
+[Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.4...HEAD)
+
+**Closed issues:**
+
+- An in-range update of request-robots is breaking the build 🚨 [\#21](https://github.com/honzahommer/ipnfo/issues/21)
+
+## [v2.0.4](https://github.com/honzahommer/ipnfo/tree/v2.0.4) (2019-07-18)
+[Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.3...v2.0.4)
+
+**Closed issues:**
+
+- An in-range update of helmet is breaking the build 🚨 [\#19](https://github.com/honzahommer/ipnfo/issues/19)
+- An in-range update of husky is breaking the build 🚨 [\#17](https://github.com/honzahommer/ipnfo/issues/17)
+- An in-range update of http-errors is breaking the build 🚨 [\#15](https://github.com/honzahommer/ipnfo/issues/15)
+
+**Merged pull requests:**
+
+- Bump lodash from 4.17.11 to 4.17.14 [\#20](https://github.com/honzahommer/ipnfo/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update husky to the latest version 🚀 [\#18](https://github.com/honzahommer/ipnfo/pull/18) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v2.0.3](https://github.com/honzahommer/ipnfo/tree/v2.0.3) (2019-05-19)
 [Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.2...v2.0.3)
 
