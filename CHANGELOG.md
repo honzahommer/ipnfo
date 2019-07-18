@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/honzahommer/ipnfo/tree/HEAD)
-
-[Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.4...HEAD)
+## [v2.0.5](https://github.com/honzahommer/ipnfo/tree/v2.0.5) (2019-07-18)
+[Full Changelog](https://github.com/honzahommer/ipnfo/compare/v2.0.4...v2.0.5)
 
 **Closed issues:**
 
