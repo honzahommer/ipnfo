@@ -10,7 +10,7 @@ describe('ipnfo', () => {
       .expect(200)
       .end((err, res) => {
         if (err) return done(err);
-        expect(res.body.hostname).to.be.equal('google-public-dns-a.google.com');
+        expect(res.body.hostname).to.be.equal('dns.google');
         done();
       });
   });
@@ -22,7 +22,7 @@ describe('ipnfo', () => {
       .expect(200)
       .end((err, res) => {
         if (err) return done(err);
-        expect(res.text).to.be.equal('google-public-dns-a.google.com');
+        expect(res.text).to.be.equal('dns.google');
         done();
       });
   });
