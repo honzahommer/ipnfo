@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "flat": "^5.0.0",
     "geolite2": "^1.2.1",
     "helmet": "^3.21.1",
